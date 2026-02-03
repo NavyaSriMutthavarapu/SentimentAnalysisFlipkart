@@ -4,6 +4,7 @@ import re
 import nltk
 nltk.download('punkt')
 nltk.download('stopwords')
+nltk.download('punkt_tab')
 import string
 import contractions
 from nltk import word_tokenize
@@ -69,3 +70,4 @@ if st.button("Predict Sentiment"):
         else:
 
             st.error("❌ Negative Review")
+
