@@ -2,6 +2,8 @@ import streamlit as st
 import pickle
 import re
 import nltk
+nltk.download('punkt')
+nltk.download('stopwords')
 import string
 import contractions
 from nltk import word_tokenize
@@ -65,4 +67,5 @@ if st.button("Predict Sentiment"):
         if prediction == 1:
             st.success("✅ Positive Review")
         else:
+
             st.error("❌ Negative Review")
